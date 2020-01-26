@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Indoor Cycling</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/week1.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="week">WEEK 1</div>
+      <div class="outer-circle">
+          <svg class="progress-ring" width="100%" height="100%" style="position: absolute;">
+            <circle class="progress-ring__circle_outer" stroke="#404040" stroke-width="10" fill="transparent" r="47%" cx="50%" cy="50%"/>
+          </svg>
+          <div class="inner-circle">
+              <svg class="progress-ring" width="100%" height="100%" style="position: absolute;">
+                <circle id="inner-circle-stroke" class="progress-ring__circle_inner" stroke="#8debbc" stroke-width="10" fill="transparent" r="47%" cx="50%" cy="50%"/>
+              </svg>
+              <div class="start button" onclick="startWeek1();" id="start">START</div>
+              <div class="kmh hidden" id="kmh">KMH</div>
+          </div>
+      </div>
+      <div class="timer" id="timer"></div>
+      <div class="sets" id="sets"></div>
+    </div>
+    <div id="flash" class="hidden" style="opacity: 100%; position: absolute; background-color: #ffffff; height: 100vh; width: 100vw;"></div>
+  </body>
+  <script src="js/week1.js"></script>
+</html>

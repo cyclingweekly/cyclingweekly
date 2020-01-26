@@ -1,0 +1,237 @@
+body, html {
+    background-color: #2e2e2e;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (min-height: 600px) {
+    .container {
+        height: 75vh;
+        width: 45vh;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .week {
+        position: relative;
+        margin: auto;
+        height: 5%;
+        width: 100%;
+        top: 7%;
+        font-weight: bold;
+        color: #7f7f7f;
+        font-size: 4vh;
+        letter-spacing: 3px;
+        text-align: center;
+        line-height: 100%;
+    }
+
+    .progress-ring__circle_outer, .progress-ring__circle_inner {
+        transition: 0.35s stroke-dashoffset;
+        transform: rotate(-90deg);
+        transform-origin: 50% 50%;
+    }
+
+    .flash-screen {
+        animation: flash 0.5s;
+    }
+
+    @keyframes flash {
+        0%, 100% {
+            opacity: 0%;
+        }
+        50% {
+            opacity: 100%;
+        }
+    }
+    
+    .outer-circle {
+        position: relative;
+        margin: auto;
+        height: 43%;
+        width: 80%;
+        top: 15%;
+        /* border-radius: 100%;
+        border: 10px solid #404040; */
+    }
+
+    .inner-circle {
+        position: absolute;
+        margin: 3%;
+        height: 94%;
+        width: 94%;
+        /* border-radius: 100%;
+        border: 10px solid #8debbc; */
+    }
+
+    .start {
+        position: relative;
+        margin: auto;
+        height: 35%;
+        width: 100%;
+        top: 32%;
+        color: #f2f2f2;
+        letter-spacing: 3px;
+        text-align: center;
+        font-size: 5vh;
+        font-weight: bold;
+        line-height: 180%;
+    }
+
+    .button {
+        cursor: pointer;
+    }
+
+    .kmh {
+        position: relative;
+        margin: auto;
+        height: 35%;
+        width: 100%;
+        top: 20%;
+        color: #8debbc;
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 4vh;
+        font-weight: bold;
+        line-height: 120%;
+    }
+
+    .timer {
+        position: relative;
+        margin: auto;
+        height: 12%;
+        width: 100%;
+        top: 23%;
+        color: #f2f2f2;
+        letter-spacing: 3px;
+        text-align: center;
+        font-size: 9vh;
+        font-weight: bolder;
+        line-height: 100%;
+    }
+
+    .sets {
+        position: relative;
+        margin: auto;
+        height: 4%;
+        width: 20%;
+        top: 26%;
+        color: #7f7f7f;
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 3vh;
+        font-weight: bold;
+        line-height: 100%;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .container {
+        height: 451px;
+        width: 270px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .week {
+        position: relative;
+        margin: auto;
+        height: 5%;
+        width: 100%;
+        top: 7%;
+        font-weight: bold;
+        color: #7f7f7f;
+        font-size: 24px;
+        letter-spacing: 3px;
+        text-align: center;
+        line-height: 100%;
+    }
+    
+    .outer-circle {
+        position: relative;
+        margin: auto;
+        height: 43%;
+        width: 80%;
+        top: 15%;
+        border-radius: 100%;
+        border: 10px solid #404040;
+    }
+
+    .inner-circle {
+        position: relative;
+        margin: auto;
+        height: 100%;
+        width: 100%;    
+        border-radius: 100%;
+        border: 10px solid #8debbc;
+    }
+
+    .start {
+        position: relative;
+        margin: auto;
+        height: 35%;
+        width: 100%;
+        top: 35%;
+        color: #f2f2f2;
+        letter-spacing: 3px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 180%;
+    }
+
+    .kmh {
+        position: relative;
+        margin: auto;
+        height: 35%;
+        width: 100%;
+        top: 35%;
+        color: #8debbc;
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 120%;
+    }
+
+    .timer {
+        position: relative;
+        margin: auto;
+        height: 12%;
+        width: 100%;
+        top: 23%;
+        color: #f2f2f2;
+        letter-spacing: 3px;
+        text-align: center;
+        font-size: 54px;
+        font-weight: bolder;
+        line-height: 100%;
+    }
+
+    .sets {
+        position: relative;
+        margin: auto;
+        height: 4%;
+        width: 20%;
+        top: 26%;
+        color: #7f7f7f;
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 100%;
+    }
+}
