@@ -17,8 +17,11 @@ function restartInnerCircle() {
 }
 
 function restartCircles() {
+    console.log("here");
     restartOuterCircle();
     restartInnerCircle();
+    setProgressOuter(0);
+    setProgressInner(0);
 }
 
 function setProgressOuter(percent) {
