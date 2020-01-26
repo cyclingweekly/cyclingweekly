@@ -289,3 +289,5 @@ async function startWeek1() {
     clearInterval(intervalInner);
     clearInterval(intervalTimer);
 }
+
+window.onload = restartCircles;
