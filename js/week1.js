@@ -17,11 +17,8 @@ function restartInnerCircle() {
 }
 
 function restartCircles() {
-    console.log("here");
     restartOuterCircle();
     restartInnerCircle();
-    setProgressOuter(0);
-    setProgressInner(0);
 }
 
 function setProgressOuter(percent) {
@@ -32,6 +29,8 @@ function setProgressInner(percent) {
   const offset = circumferenceInner - percent / 100 * circumferenceInner;
   circleInner.style.strokeDashoffset = offset;
 }
+
+restartCircles();
 
 var flash = document.getElementById("flash");
 var start = document.getElementById("start");
@@ -290,5 +289,3 @@ async function startWeek1() {
     clearInterval(intervalInner);
     clearInterval(intervalTimer);
 }
-
-document.onload(restartCircles());
