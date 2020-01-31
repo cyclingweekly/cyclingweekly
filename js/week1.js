@@ -16,11 +16,6 @@ function restartInnerCircle() {
     circleInner.style.strokeDashoffset = `${circumferenceInner}`;
 }
 
-function restartCircles() {
-    restartOuterCircle();
-    restartInnerCircle();
-}
-
 function setProgressOuter(percent) {
   const offset = circumferenceOuter - percent / 100 * circumferenceOuter;
   circleOuter.style.strokeDashoffset = offset;
@@ -28,6 +23,13 @@ function setProgressOuter(percent) {
 function setProgressInner(percent) {
   const offset = circumferenceInner - percent / 100 * circumferenceInner;
   circleInner.style.strokeDashoffset = offset;
+}
+
+function restartCircles() {
+    restartOuterCircle();
+    restartInnerCircle();
+    setProgressOuter(0);
+    setProgressInner(0);
 }
 
 restartCircles();
@@ -113,6 +115,9 @@ function reset(z) {
 
 async function startWeek1() {
     var z;
+    
+    restartCircles();
+    
     start.classList.remove("button");
     start.attributes.removeNamedItem("onclick");
     kmh.classList.remove("hidden");
