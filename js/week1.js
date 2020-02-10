@@ -1,8 +1,16 @@
+var circles;
+var circleOuter;
+var radiusOuter;
+var circumferenceOuter;
+var circleInner;
+var radiusInner;
+var circumferenceInner;
+
 function restartOuterCircle() {
-    var circles = document.querySelectorAll('circle');
-    var circleOuter = circles[0];
-    var radiusOuter = circleOuter.r.baseVal.value;
-    var circumferenceOuter = radiusOuter * 2 * Math.PI;
+    circles = document.querySelectorAll('circle');
+    circleOuter = circles[0];
+    radiusOuter = circleOuter.r.baseVal.value;
+    circumferenceOuter = radiusOuter * 2 * Math.PI;
     
     circleOuter.style.strokeDasharray = circumferenceOuter;
     circleOuter.style.strokeDashoffset = circumferenceOuter;
@@ -10,10 +18,10 @@ function restartOuterCircle() {
 }
 
 function restartInnerCircle() {
-    var circles = document.querySelectorAll('circle');
-    var circleInner = circles[1];
-    var radiusInner = circleInner.r.baseVal.value;
-    var circumferenceInner = radiusInner * 2 * Math.PI;
+    circles = document.querySelectorAll('circle');
+    circleInner = circles[1];
+    radiusInner = circleInner.r.baseVal.value;
+    circumferenceInner = radiusInner * 2 * Math.PI;
     
     circleInner.style.strokeDasharray = circumferenceInner;
     circleInner.style.strokeDashoffset = circumferenceInner;
