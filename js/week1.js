@@ -1,18 +1,20 @@
-var circles = document.querySelectorAll('circle');
-var circleOuter = circles[0];
-var circleInner = circles[1];
-var radiusOuter = circleOuter.r.baseVal.value;
-var radiusInner = circleInner.r.baseVal.value;
-var circumferenceOuter = radiusOuter * 2 * Math.PI;
-var circumferenceInner = radiusInner * 2 * Math.PI;
-
 function restartOuterCircle() {
+    var circles = document.querySelectorAll('circle');
+    var circleOuter = circles[0];
+    var radiusOuter = circleOuter.r.baseVal.value;
+    var circumferenceOuter = radiusOuter * 2 * Math.PI;
+    
     circleOuter.style.strokeDasharray = circumferenceOuter;
     circleOuter.style.strokeDashoffset = circumferenceOuter;
     console.log(circumferenceOuter);
 }
 
 function restartInnerCircle() {
+    var circles = document.querySelectorAll('circle');
+    var circleInner = circles[1];
+    var radiusInner = circleInner.r.baseVal.value;
+    var circumferenceInner = radiusInner * 2 * Math.PI;
+    
     circleInner.style.strokeDasharray = circumferenceInner;
     circleInner.style.strokeDashoffset = circumferenceInner;
     console.log(circumferenceInner);
