@@ -7,8 +7,9 @@ var circumferenceOuter = radiusOuter * 2 * Math.PI;
 var circumferenceInner = radiusInner * 2 * Math.PI;
 
 function restartOuterCircle() {
-    circleOuter.style.strokeDasharray = `${circumferenceOuter} ${circumferenceOuter}`;
-    circleOuter.style.strokeDashoffset = `${circumferenceOuter}`;
+    circleOuter.style.strokeDasharray = circumferenceOuter;
+    circleOuter.style.strokeDashoffset = circumferenceOuter;
+    console.log(`${circumferenceOuter} ${circumferenceOuter}`);
 }
 
 function restartInnerCircle() {
