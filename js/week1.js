@@ -9,12 +9,13 @@ var circumferenceInner = radiusInner * 2 * Math.PI;
 function restartOuterCircle() {
     circleOuter.style.strokeDasharray = circumferenceOuter;
     circleOuter.style.strokeDashoffset = circumferenceOuter;
-    console.log(`${circumferenceOuter} ${circumferenceOuter}`);
+    console.log(circumferenceOuter);
 }
 
 function restartInnerCircle() {
-    circleInner.style.strokeDasharray = `${circumferenceInner} ${circumferenceInner}`;
-    circleInner.style.strokeDashoffset = `${circumferenceInner}`;
+    circleInner.style.strokeDasharray = circumferenceInner;
+    circleInner.style.strokeDashoffset = circumferenceInner;
+    console.log(circumferenceInner);
 }
 
 function setProgressOuter(percent) {
